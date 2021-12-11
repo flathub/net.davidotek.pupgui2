@@ -1,0 +1,14 @@
+{
+    "name": "python3-inputs",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"inputs\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/d0/94/040a0d9c81f018c39bd887b7b825013b024deb0a6c795f9524797e2cd41b/inputs-0.5-py2.py3-none-any.whl",
+            "sha256": "13f894564e52134cf1e3862b1811da034875eb1f2b62e6021e3776e9669a96ec"
+        }
+    ]
+}

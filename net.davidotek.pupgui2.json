@@ -12,7 +12,6 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--persist=.config/pupgui",
         "--filesystem=~/.steam/root/compatibilitytools.d",
         "--filesystem=~/.steam/root/config:ro",
         "--filesystem=~/.local/share/Steam/compatibilitytools.d",
@@ -21,11 +20,13 @@
         "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam/config:ro",
         "--filesystem=~/.local/share/lutris/runners/wine",
         "--filesystem=~/.config/heroic/tools",
-        "--device=dri"
+        "--device=all"
     ],
     "modules": [
         "python3-requests.json",
         "python3-vdf.json",
+        "python3-inputs.json",
+        "python3-pyxdg.json",
         {
             "name": "pyside2",
             "buildsystem": "cmake-ninja",
@@ -70,8 +71,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.3.2.tar.gz",
-                    "sha256": "4251b30a9f9778d247a2b8e9a15b1a9e594c44b1af74f6882974d4ad28909590"
+                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.4.0.tar.gz",
+                    "sha256": "90f2daf8741d0161e28792df055faedc3c1d55cd89f9e6def612658bbd804657"
                 }
             ]
         },
