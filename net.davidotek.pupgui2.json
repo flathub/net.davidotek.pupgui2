@@ -16,8 +16,7 @@
         "--filesystem=~/.steam/root/config:ro",
         "--filesystem=~/.local/share/Steam/compatibilitytools.d:create",
         "--filesystem=~/.local/share/Steam/config:ro",
-        "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam/compatibilitytools.d",
-        "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam/config:ro",
+        "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam",
         "--filesystem=~/.local/share/lutris/runners/wine",
         "--filesystem=~/.config/heroic/tools",
         "--device=all"
