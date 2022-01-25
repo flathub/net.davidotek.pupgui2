@@ -15,6 +15,7 @@
         "--filesystem=~/.steam",
         "--filesystem=~/.local/share/Steam",
         "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam",
+        "--filesystem=~/.var/app/net.lutris.Lutris/data/lutris/runners/wine",
         "--filesystem=~/.local/share/lutris/runners/wine",
         "--filesystem=~/.config/heroic/tools",
         "--device=all"
