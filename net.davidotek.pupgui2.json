@@ -1,7 +1,7 @@
 {
     "app-id": "net.davidotek.pupgui2",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "6.2",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.llvm12"
@@ -25,32 +25,52 @@
         "python3-vdf.json",
         "python3-inputs.json",
         "python3-pyxdg.json",
+        "python3-packaging.json",
         {
-            "name": "pyside2",
-            "buildsystem": "cmake-ninja",
+            "name": "shiboken6",
+            "buildsystem": "simple",
             "build-options": {
                 "prepend-path": "/usr/lib/sdk/llvm12/bin",
                 "prepend-ld-library-path": "/usr/lib/sdk/llvm12/lib"
             },
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DBUILD_TESTS=OFF"
-            ],
-            "cleanup": [
-                "/bin"
+            "build-commands": [
+                "python3 setup.py install --verbose-build --skip-docs --build-type=shiboken6 --prefix=${FLATPAK_DEST}"
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/QtForPython/pyside2/PySide2-5.15.2-src/pyside-setup-opensource-src-5.15.2.tar.xz",
-                    "sha256": "b306504b0b8037079a8eab772ee774b9e877a2d84bab2dbefbe4fa6f83941418"
+                    "type": "git",
+                    "url": "https://github.com/qtproject/pyside-pyside-setup.git",
+                    "branch": "6.2.4",
+                    "commit": "4c7d937cc9740fe6e6f47c9bb59401519c39d860"
+                }
+            ]
+        },
+        {
+            "name": "pyside6",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "build-options": {
+                "prepend-path": "/usr/lib/sdk/llvm12/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm12/lib"
+            },
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_TESTS=OFF",
+                "-DCMAKE_SKIP_RPATH:BOOL=YES"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/qtproject/pyside-pyside-setup.git",
+                    "branch": "6.2.4",
+                    "commit": "4c7d937cc9740fe6e6f47c9bb59401519c39d860"
                 },
                 {
                     "type": "shell",
                     "commands": [
-                        "mkdir -p /app/include/qt5tmp && cp -R /usr/include/Qt* /app/include/qt5tmp",
-                        "sed -i 's|\\(--include-paths=\\)|\\1/app/include/qt5tmp:|' sources/pyside2/cmake/Macros/PySideModules.cmake"
+                        "mkdir -p /app/include/qt6tmp && cp -R /usr/include/Qt* /app/include/qt6tmp",
+                        "sed -i 's|--include-paths=|--include-paths=/app/include/qt6tmp:|' sources/pyside6/cmake/Macros/PySideModules.cmake",
+                        "sed -i 's|<signature_p.h>|<signature/signature_p.h>|' sources/pyside6/libpyside/feature_select.cpp"
                     ]
                 }
             ]
@@ -59,8 +79,6 @@
             "name": "pupgui2",
             "buildsystem": "simple",
             "build-commands": [
-                "for f in {pupgui2/*.py,share/pupgui2/ctmods/*.py}; do sed -i 's/PySide6/PySide2/' $f; done;",
-                "sed -i 's/app.exec()/app.exec_()/' pupgui2/pupgui2.py",
                 "mkdir -p /app/share",
                 "mkdir -p /app/src",
                 "cp -r share /app/",
