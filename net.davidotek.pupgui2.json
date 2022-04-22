@@ -26,6 +26,7 @@
         "python3-inputs.json",
         "python3-pyxdg.json",
         "python3-packaging.json",
+        "python3-steam.json",
         {
             "name": "shiboken6",
             "buildsystem": "simple",
