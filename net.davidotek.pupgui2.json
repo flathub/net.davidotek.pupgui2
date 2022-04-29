@@ -80,16 +80,15 @@
             "name": "pupgui2",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/share",
-                "mkdir -p /app/src",
-                "cp -r share /app/",
-                "cp -r pupgui2 /app/src/"
+                "sed -i '/PySide6/d' setup.cfg",
+                "sed -i \"s/BUILD_INFO = .*/BUILD_INFO = 'DavidoTek Flathub build'/\" pupgui2/constants.py",
+                "pip3 install --verbose --no-index --prefix=${FLATPAK_DEST} --no-build-isolation ."
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.6.1.tar.gz",
-                    "sha256": "b9c08183e14d02f1b36798e64669a73e575e8a87c5d521e2936a06185dc21271"
+                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.6.3.tar.gz",
+                    "sha256": "0e4dfc60c53608463f88952021f65b03eff02dddfc5d96c65fc2710619bd6b8a"
                 }
             ]
         },
