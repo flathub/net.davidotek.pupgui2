@@ -17,6 +17,7 @@
         "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam",
         "--filesystem=~/.var/app/net.lutris.Lutris/data/lutris/runners/wine",
         "--filesystem=~/.local/share/lutris/runners/wine",
+        "--filesystem=~/.var/app/com.usebottles.bottles/data/bottles/runners",
         "--filesystem=~/.config/heroic/tools",
         "--device=all"
     ],
@@ -89,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.6.3.tar.gz",
-                    "sha256": "0e4dfc60c53608463f88952021f65b03eff02dddfc5d96c65fc2710619bd6b8a"
+                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.6.4.tar.gz",
+                    "sha256": "bd5982f7c5d85d0de5f7b82aecd29f7016ccab4274a39504bd9029e696e164ea"
                 }
             ]
         },
