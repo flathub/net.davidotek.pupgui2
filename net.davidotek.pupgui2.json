@@ -19,6 +19,7 @@
         "--filesystem=~/.local/share/lutris/runners/wine",
         "--filesystem=~/.var/app/com.usebottles.bottles/data/bottles/runners",
         "--filesystem=~/.config/heroic/tools",
+        "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools",
         "--device=all"
     ],
     "modules": [
