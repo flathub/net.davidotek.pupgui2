@@ -95,8 +95,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.6.4.tar.gz",
-                    "sha256": "bd5982f7c5d85d0de5f7b82aecd29f7016ccab4274a39504bd9029e696e164ea"
+                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.6.5.tar.gz",
+                    "sha256": "598b03a2577e1572a251b798bcf9f0b8dae9b2db41e7435e6ca5a9f40209442b"
                 }
             ]
         },
