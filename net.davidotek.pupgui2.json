@@ -3,9 +3,6 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "6.3",
     "sdk": "org.kde.Sdk",
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm12"
-    ],
     "command": "net.davidotek.pupgui2",
     "finish-args": [
         "--share=ipc",
