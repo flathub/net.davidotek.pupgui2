@@ -78,8 +78,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.7.0.tar.gz",
-                    "sha256": "9158ff21e1ec561067d8b097cd627775d8b3b44667f9d889ebacd70889c57c92"
+                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.7.2.tar.gz",
+                    "sha256": "910316403482a255ac4233863e2b46ee03b82093029f37fcb89aa7087c33d06e"
                 }
             ]
         },
