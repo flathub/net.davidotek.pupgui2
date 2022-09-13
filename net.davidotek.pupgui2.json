@@ -40,7 +40,8 @@
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pyside6_essentials --no-build-isolation",
                 "rm -rf ${FLATPAK_DEST}/bin/pyside6-{assistant,designer,linguist,lrelease,lupdate,qmllint}",
                 "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/{assistant,designer,linguist,lrelease,lupdate,qmllint}",
-                "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/{examples,Qt/qml,Qt/resources,Qt/translations/qtwebengine_locales}"
+                "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/{examples,Qt/qml,Qt/resources,Qt/translations/qtwebengine_locales}",
+                "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/Qt/lib"
             ],
             "sources": [
                 {
