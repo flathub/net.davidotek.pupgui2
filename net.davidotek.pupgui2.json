@@ -19,11 +19,15 @@
         "--filesystem=~/.local/share/lutris/runners",
         "--filesystem=~/.local/share/lutris/runtime/dxvk",
         "--filesystem=~/.local/share/lutris/pga.db:ro",
-        "--filesystem=~/.config/lutris:ro",
         "--filesystem=~/.var/app/com.usebottles.bottles/data/bottles/runners",
-        "--filesystem=~/.config/heroic/tools",
         "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools",
-        "--device=all"
+        "--filesystem=~/stl:create",
+        "--filesystem=~/.config",
+        "--filesystem=~/.bashrc",
+        "--filesystem=~/.zshrc",
+        "--filesystem=~/.kshrc",
+        "--device=all",
+        "--talk-name=org.freedesktop.Flatpak"
     ],
     "modules": [
         "python3-requests.json",
@@ -78,9 +82,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.7.2.tar.gz",
-                    "sha256": "910316403482a255ac4233863e2b46ee03b82093029f37fcb89aa7087c33d06e"
+                    "type": "git",
+                    "url": "https://github.com/DavidoTek/ProtonUp-Qt",
+                    "commit": "a8d75974ee60929dc4c09f00a6d3ff0e6054492f"
                 }
             ]
         },
