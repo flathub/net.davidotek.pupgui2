@@ -1,7 +1,7 @@
 {
     "app-id": "net.davidotek.pupgui2",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.3",
+    "runtime-version": "6.4",
     "sdk": "org.kde.Sdk",
     "command": "net.davidotek.pupgui2",
     "finish-args": [
@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/73/c7/3d50c6c5aedea89891378913816710ce1787b73244a5229fe02bb4df1c9b/PySide6_Essentials-6.3.2-cp36-abi3-manylinux_2_28_x86_64.whl",
-                    "sha256": "a5d6528a0e7bcf4c7b892210f5ee34fdf2cb95ecddfafa1eb77509d924bcbbf1"
+                    "url": "https://files.pythonhosted.org/packages/bd/21/7c899328b7d46b0d0504149f4eb0de55bd0027c058e53cfd355d727c763e/PySide6_Essentials-6.4.0.1-cp37-abi3-manylinux_2_28_x86_64.whl",
+                    "sha256": "1ba1c475568392db633da032799ff84e4b1c8e0ba863e88118b4f5ae0c312fb1"
                 }
             ],
             "modules": [
@@ -64,8 +64,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/da/b7/ced7a41f2a7eb2b0f8ae4aa48233d74375d0e433351cc11c96f4224f2d29/shiboken6-6.3.2-cp36-abi3-manylinux_2_28_x86_64.whl",
-                            "sha256": "e242361886679cde47c4cb367f2e3124274201ca8bf01049235861d032666320"
+                            "url": "https://files.pythonhosted.org/packages/6b/89/eb01d7015c25587d38dc1712ee6bb6032426e71726f900e22c7f0a18d2e7/shiboken6-6.4.0.1-cp37-abi3-manylinux_2_28_x86_64.whl",
+                            "sha256": "e7f91a1f88ec27b2039df1ea4c92eb89cf7c93d80f93363db66f7a226dad9439"
                         }
                     ]
                 }
@@ -84,7 +84,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/DavidoTek/ProtonUp-Qt",
-                    "commit": "a8d75974ee60929dc4c09f00a6d3ff0e6054492f"
+                    "commit": "eb786709840dca5c47390e7b71718901cb0f4820"
                 }
             ]
         },
