@@ -37,6 +37,7 @@
         "python3-packaging.json",
         "python3-steam.json",
         "python3-PyYAML.json",
+        "python3-zstandard.json",
         {
             "name": "pyside6",
             "buildsystem": "simple",
