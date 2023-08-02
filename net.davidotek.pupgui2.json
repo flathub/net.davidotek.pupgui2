@@ -26,6 +26,7 @@
         "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/heroic/sideload_apps",
         "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store",
         "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/heroic/GamesConfig",
+        "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/heroic/store_cache",
         "--filesystem=~/.var/app/com.heroicgameslauncher.hgl/config/legendary",
         "--filesystem=~/stl:create",
         "--filesystem=~/.config",
