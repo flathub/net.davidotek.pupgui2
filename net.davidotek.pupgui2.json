@@ -1,7 +1,7 @@
 {
     "app-id": "net.davidotek.pupgui2",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.4",
+    "runtime-version": "6.5",
     "sdk": "org.kde.Sdk",
     "command": "net.davidotek.pupgui2",
     "finish-args": [
