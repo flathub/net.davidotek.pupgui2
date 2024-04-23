@@ -1,7 +1,7 @@
 {
     "app-id": "net.davidotek.pupgui2",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.6",
+    "runtime-version": "6.7",
     "sdk": "org.kde.Sdk",
     "command": "net.davidotek.pupgui2",
     "finish-args": [
@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e2/f0/09e8e38a51f705eecda1202cb51a9fcc7affb0f9fd3be44bf58ce25528dc/PySide6_Essentials-6.6.0-cp38-abi3-manylinux_2_28_x86_64.whl",
-                    "sha256": "60284641619f964e1cb4d53cf3169d7a385e0378b74edb75610918d2aea1c4e5"
+                    "url": "https://files.pythonhosted.org/packages/d8/f7/7a8a0c3a87fc9a898a521ae34aea5806f71f7bef1a0e032a6d954550fcea/PySide6_Essentials-6.7.0-cp39-abi3-manylinux_2_28_x86_64.whl",
+                    "sha256": "e013238fe40596b804068e34ac173514943a41bf8e5fbb4edfc7c30b00431bd5"
                 }
             ],
             "modules": [
@@ -72,8 +72,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6b/eb/72572b8db7713305b6a15ea7aa04bd7240cd9d84c33cc790218532fc0f43/shiboken6-6.6.0-cp38-abi3-manylinux_2_28_x86_64.whl",
-                            "sha256": "456b89fb4b323e0c5002d92e4d346b48bb4e709db801208df8a0d6b4f5efc33d"
+                            "url": "https://files.pythonhosted.org/packages/6a/05/a2f348685041495be25709f85ca30d9f79fdc4f3bcd4f8da8b980b1de071/shiboken6-6.7.0-cp39-abi3-manylinux_2_28_x86_64.whl",
+                            "sha256": "7887ba7ecfddb09ee9966325c1e229a17f3f444b0257b77cb7838792287d3e05"
                         }
                     ]
                 }
