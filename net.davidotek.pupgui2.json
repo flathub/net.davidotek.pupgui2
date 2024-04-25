@@ -11,6 +11,7 @@
         "--socket=wayland",
         "--filesystem=~/.steam",
         "--filesystem=~/.local/share/Steam",
+        "--filesystem=~/snap/steam",
         "--filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam",
         "--filesystem=~/.var/app/net.lutris.Lutris/data/lutris/runners",
         "--filesystem=~/.var/app/net.lutris.Lutris/data/lutris/runtime/dxvk",
