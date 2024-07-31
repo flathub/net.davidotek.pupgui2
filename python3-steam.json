@@ -2,7 +2,7 @@
     "name": "python3-steam",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"steam\" --no-build-isolation"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation ."
     ],
     "sources": [
         {
@@ -37,18 +37,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9a/31/62ac25584988182dee5ee949395e08943ff8b11634dc33abab7078d28433/steam-1.4.4.tar.gz",
-            "sha256": "2b5bd6911c0d4a7312f441b8d162b9d8d47c8bebb8efc6c8867393b0323fa52e"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
             "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
         },
         {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/96/60/6456b687cf55cf60020dcd01f9bc51561c3cc84f05fd8e0feb71ce60f894/vdf-3.4-py2.py3-none-any.whl",
-            "sha256": "68c1a125cc49e343d535af2dd25074e9cb0908c6607f073947c4a04bbe234534"
+            "type": "git",
+            "url": "https://github.com/solsticegamestudios/steam",
+            "commit": "152af7be3c3fae3c5bc891cef3932deb8e93deb6"
         }
     ]
 }
