@@ -39,7 +39,7 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl",
             "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df"
-        }
+        },
         {
             "type": "git",
             "url": "https://github.com/solsticegamestudios/steam",
