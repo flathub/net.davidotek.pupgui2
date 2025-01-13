@@ -1,9 +1,19 @@
 {
     "app-id": "net.davidotek.pupgui2",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
+    "base-app": "io.qt.PySide.BaseApp",
+    "base-version": "6.8",
     "command": "net.davidotek.pupgui2",
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
+    ],
+    "build-options": {
+        "env": {
+            "BASEAPP_REMOVE_WEBENGINE":"1"
+        }
+    },
     "finish-args": [
         "--share=ipc",
         "--share=network",
@@ -46,40 +56,6 @@
         "python3-steam.json",
         "python3-PyYAML.json",
         "python3-zstandard.json",
-        {
-            "name": "pyside6",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pyside6_essentials --no-build-isolation",
-                "rm -rf ${FLATPAK_DEST}/bin/pyside6-{assistant,designer,linguist,lrelease,lupdate,qmllint}",
-                "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/{assistant,designer,linguist,lrelease,lupdate,qmllint}",
-                "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/{examples,Qt/qml,Qt/resources,Qt/translations/qtwebengine_locales}",
-                "rm -rf ${FLATPAK_DEST}/lib/python3.*/site-packages/PySide6/Qt/lib"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d8/f7/7a8a0c3a87fc9a898a521ae34aea5806f71f7bef1a0e032a6d954550fcea/PySide6_Essentials-6.7.0-cp39-abi3-manylinux_2_28_x86_64.whl",
-                    "sha256": "e013238fe40596b804068e34ac173514943a41bf8e5fbb4edfc7c30b00431bd5"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "shiboken6",
-                    "buildsystem": "simple",
-                    "build-commands": [
-                        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} shiboken6 --no-build-isolation"
-                    ],
-                    "sources": [
-                        {
-                            "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6a/05/a2f348685041495be25709f85ca30d9f79fdc4f3bcd4f8da8b980b1de071/shiboken6-6.7.0-cp39-abi3-manylinux_2_28_x86_64.whl",
-                            "sha256": "7887ba7ecfddb09ee9966325c1e229a17f3f444b0257b77cb7838792287d3e05"
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "name": "pupgui2",
             "buildsystem": "simple",
