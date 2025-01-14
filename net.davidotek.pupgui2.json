@@ -9,11 +9,6 @@
     "cleanup-commands": [
         "/app/cleanup-BaseApp.sh"
     ],
-    "build-options": {
-        "env": {
-            "BASEAPP_REMOVE_WEBENGINE":"1"
-        }
-    },
     "finish-args": [
         "--share=ipc",
         "--share=network",
