@@ -3,7 +3,7 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
-    "base-app": "io.qt.PySide.BaseApp",
+    "base": "io.qt.PySide.BaseApp",
     "base-version": "6.8",
     "command": "net.davidotek.pupgui2",
     "cleanup-commands": [
