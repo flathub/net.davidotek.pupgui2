@@ -1,7 +1,7 @@
 {
     "app-id": "net.davidotek.pupgui2",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "command": "net.davidotek.pupgui2",
     "finish-args": [
@@ -59,8 +59,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d8/f7/7a8a0c3a87fc9a898a521ae34aea5806f71f7bef1a0e032a6d954550fcea/PySide6_Essentials-6.7.0-cp39-abi3-manylinux_2_28_x86_64.whl",
-                    "sha256": "e013238fe40596b804068e34ac173514943a41bf8e5fbb4edfc7c30b00431bd5"
+                    "url": "https://files.pythonhosted.org/packages/d9/cd/2877d399e1304589fada703a45b6d496247257a9cc318b52976056fed9a0/PySide6_Essentials-6.8.1.1-cp39-abi3-manylinux_2_28_x86_64.whl",
+                    "sha256": "62b64842a91114c224c41eeb6a8c8f255ba60268bc5ac19724f944d60e2277c6"
                 }
             ],
             "modules": [
@@ -73,8 +73,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6a/05/a2f348685041495be25709f85ca30d9f79fdc4f3bcd4f8da8b980b1de071/shiboken6-6.7.0-cp39-abi3-manylinux_2_28_x86_64.whl",
-                            "sha256": "7887ba7ecfddb09ee9966325c1e229a17f3f444b0257b77cb7838792287d3e05"
+                            "url": "https://files.pythonhosted.org/packages/bc/a2/27586f87b2364a8ec085083a367e494698b15a6ba9065d9d984ebbc10179/shiboken6-6.8.1.1-cp39-abi3-manylinux_2_28_x86_64.whl",
+                            "sha256": "d672df0f29dc5f44de7205c1acae4d0471ba8371bb1d68fdacbf1686f4d22a96"
                         }
                     ]
                 }
@@ -93,7 +93,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/DavidoTek/ProtonUp-Qt",
-                    "commit": "bb3ba5afe05521a1b1c6e4c4b3c3a56e5de5c566"
+                    "tag": "v2.11.1",
+                    "commit": "bb3ba5afe05521a1b1c6e4c4b3c3a56e5de5c566",
+                    "x-checker-data":
+                        {
+                            "type":"git",
+                            "tag-pattern": "^v([\\d.]+)$",
+                            "is-important": true
+                        }
                 }
             ]
         },

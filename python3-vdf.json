@@ -8,7 +8,12 @@
         {
             "type": "git",
             "url": "https://github.com/solsticegamestudios/vdf",
-            "commit": "eaa7f089dcb622d4e80a3bbf7185fe6e5d969cf3"
+            "tag": "v4.0",
+            "commit": "fb88ea7e38a85476743f5601b0c80d5715034623",
+            "x-checker-data": {
+                "type": "git",
+                "tag-pattern": "^v([\\d.]+)$"
+            }
         }
     ]
 }

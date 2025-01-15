@@ -8,7 +8,12 @@
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/e5/8d/cf41b66a8110670e3ad03dab9b759704eeed07fa96e90fdc0357b2ba70e2/pyxdg-0.28-py2.py3-none-any.whl",
-            "sha256": "bdaf595999a0178ecea4052b7f4195569c1ff4d344567bccdc12dfdf02d545ab"
+            "sha256": "bdaf595999a0178ecea4052b7f4195569c1ff4d344567bccdc12dfdf02d545ab",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "pyxdg",
+                "packagetype": "bdist_wheel"
+            }
         }
     ]
 }
