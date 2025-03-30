@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a4/07/14f8ad37f2d12a5ce41206c21820d8cb6561b728e51fad4530dff0552a67/cachetools-5.5.0-py3-none-any.whl",
-            "sha256": "02134e8439cdc2ffb62023ce1debca2944c3f289d66bb17ead3ab3dede74b292",
+            "url": "https://files.pythonhosted.org/packages/72/76/20fa66124dbe6be5cafeb312ece67de6b61dd91a0247d1ea13db4ebb33c2/cachetools-5.5.2-py3-none-any.whl",
+            "sha256": "d26a22bcc62eb95c3beabd9f1ee5e820d3d2704fe2967cbe350e20c8ffcd3f0a",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "cachetools",
@@ -17,8 +17,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl",
-            "sha256": "1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56",
+            "url": "https://files.pythonhosted.org/packages/38/fc/bce832fd4fd99766c04d1ee0eead6b0ec6486fb100ae5e74c1d91292b982/certifi-2025.1.31-py3-none-any.whl",
+            "sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "certifi",
@@ -47,8 +47,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/11/dc/e66551683ade663b5f07d7b3bc46434bf703491dbd22ee12d1f979ca828f/pycryptodomex-3.21.0.tar.gz",
-            "sha256": "222d0bd05381dd25c32dd6065c071ebf084212ab79bab4599ba9e6a3e0009e6c",
+            "url": "https://files.pythonhosted.org/packages/ba/d5/861a7daada160fcf6b0393fb741eeb0d0910b039ad7f0cd56c39afdd4a20/pycryptodomex-3.22.0.tar.gz",
+            "sha256": "a1da61bacc22f93a91cbe690e3eb2022a03ab4123690ab16c46abb693a9df63d",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "pycryptodomex"
