@@ -40,10 +40,10 @@
         "--talk-name=org.freedesktop.Flatpak"
     ],
     "build-options": {
-          "env": [
-              "BASEAPP_REMOVE_WEBENGINE=1",
-              "BASEAPP_DISABLE_NUMPY=1"
-          ]
+        "env": [
+            "BASEAPP_REMOVE_WEBENGINE=1",
+            "BASEAPP_DISABLE_NUMPY=1"
+        ]
     },
     "cleanup-commands": [
         "/app/cleanup-BaseApp.sh"
@@ -70,8 +70,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/DavidoTek/ProtonUp-Qt",
-                    "tag": "v2.12.1",
-                    "commit": "44ec5917f6c5096795d9e6455e262048b9ce6935",
+                    "tag": "v2.13.0",
+                    "commit": "1bb3efb3bff843fa8d32a48169bd5afa3c7aed13",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$",
