@@ -70,8 +70,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/DavidoTek/ProtonUp-Qt",
-                    "tag": "v2.13.0",
-                    "commit": "1bb3efb3bff843fa8d32a48169bd5afa3c7aed13",
+                    "tag": "v2.14.0",
+                    "commit": "826f2cb7e1c135dd25d3ef56b48b736f7795396d",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$",
