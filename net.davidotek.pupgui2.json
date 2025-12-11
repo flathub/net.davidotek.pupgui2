@@ -60,6 +60,7 @@
         "python3-steam.json",
         "python3-PyYAML.json",
         "python3-zstandard.json",
+        "python3-six.json",
         {
             "name": "pupgui2",
             "buildsystem": "simple",
